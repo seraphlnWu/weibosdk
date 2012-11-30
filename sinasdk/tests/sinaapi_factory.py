@@ -18,9 +18,9 @@ from sinaapi import SinaAPI
 
 db = pymongo.Connection('localhost')['sandbox_mongo_5']
 
-APP_KEY = "2205141851"
-APP_SECRET = "5d1b66b5ea2fd120f02323e10429fabe"
-CALLBACK_URL = 'http://www.weibomaster.com/callback/'
+APP_KEY = "1234567789"
+APP_SECRET = "asdfjkalsdfjl"
+CALLBACK_URL = 'http://www.example.com/callback/'
 
 def get_api(uid):
     user_info = db.users.find_one({'_id': uid}, {'tok': 1, 'exp': 1})
